@@ -554,7 +554,7 @@ img {
 }
 
 .port-item-link:hover,
-.port-item-link:focus {
+.port-item-link:focus { 
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 .port-bord {
@@ -575,6 +575,30 @@ img {
   overflow: hidden;
 }
 .overlay {
+  position: absolute;
+  background-color: #2196f3e5;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  padding: 63px 24px 51px 24px;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 28px;
+  letter-spacing: 0.03em;
+  text-align:start;
+  color: #ffffff;
+  transform: translateY(100%);
+  transition: transform 250ms linear;
+}
+.port-item-link:hover .overlay,
+.port-item-link:focus .overlay {
+  transform: translateY(0);
+}
+/* .img-thumb:hover .overlay {
+  transform: translateY(0);
+} */
+/* .overlay {
   position: absolute;
   transform: translatey(0);
   transition: transform 250ms ease;
@@ -597,7 +621,7 @@ img {
   width: 322px;
   height: 180px;
   margin: auto;
-}
+} */
 /* первым трем */
 /* .port-item:nth-child(-n+3) {
   margin-top: 0; */
